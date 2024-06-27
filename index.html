@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Search</title>
+    
+    <style>
+        body {
+            background-color: #1b1b32;
+           
+        }
+        #h-1 {
+            text-align: center;
+           padding-top: 35px;
+           color: whitesmoke;
+        }
+        #main-div {
+            border: 1px solid;
+            margin-left: 450px;
+            margin-top: 100px;
+            width: 500px;
+            height: 800px;
+            
+        }
+        #main-div,search-input {
+            margin: auto;
+            padding-left: 200px;
+            padding-top: 40px;
+            width: 340px;
+            background-color: whitesmoke;
+            border-radius: 20px
+        }
+        #search-input{
+            width: 240px;
+            height: 40px;
+            border-radius: 7px;
+            border: 2px solid rgb(117, 175, 241);
+        }
+        #search-button {
+            width: 80px;
+            height: 43px;
+            border-radius: 10px;
+            background-color: #7f21ab;
+        }
+        
+        #pokemon-name,#pokemon-id {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 28px
+        }
+        
+         #weight {
+            margin-left: -190px;
+         }
+        
+        #height{
+           margin-left: -195px; 
+        }
+        .we-he {
+            display: flex;
+            margin-top: -30px;
+            font-family: sans-serif; 
+        }
+        .xspan {
+            padding-left: 200px;
+            
+        }
+        #hep {
+            margin-left: 20px
+        }
+        
+   #image-el {
+       padding: 50px
+   }
+   #image-div {
+    width: 200px;
+    height: 150px;
+   }
+   #div-two {
+    font-size: 20px;
+    
+   }
+   #types {
+    width: 66px;
+    background-color: rgb(255, 0, 179);
+     font-size: 21px;
+     border-radius: 5px;
+   }
+   @media screen and (min-width: 550px) {
+  #h-1 {
+    font-size: 2em;
+  }
+
+  #main-div {
+    width: 450px;
+  }
+
+  #searchI-searchB{
+    width: 95%;
+  }
+
+  #type {
+    width: 75px;
+  }
+}
+   
+   
+    </style>
+
+</head>
+<body>
+
+    <h1 id="h-1">POKEMON SEARCH</h1>
+
+    <div id="main-div">  
+               <div id="searchI-searchB">   
+                  <input id="search-input" >
+                <button id="search-button">Search</button>
+            </div>
+                <div id="div-one">
+                          <p id="pokemon-name">Name</p>
+                       <p id='pokemon-id'>#</p>
+                   <div class="we-he">
+                <p >Weight:<span id="weight" class="xspan">00</span></p>
+             <p id="hep">Height:<span id="height" class="xspan">00</span></p>    
+   </div>
+
+   <div id="image-div">
+            <img src="" id="image-el" alt="A photo of pokemon" style="display: none"><br>
+    </div>  
+
+                <p id="types"></p>  
+
+                <div id="div-two">
+                    <p>Base<span id="base" class="xspan">Stats</span></p>
+                    <p>HP:  <span id="hp" class="xspan">0</span></p>
+                     <p>Attack:<span id="attack" class="xspan">0</span></p>
+                     <p>Defence:<span id="defense" class="xspan">0</span></p>
+                     <p>Sp.Attack:<span id="s-attack" class="xspan">0</span></p>
+                     <p>Sp.Defense:<span id="s-defense" class="xspan" >0</span></p>
+                     <p>Speed:<span id="speed" class="xspan" >0</span></p>
+            </div>
+    </div>
+
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
